@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&display=swap");
+
+li {
+  list-style: none;
+}
+
+body {
+  padding-top: 100px;
+}
+
+.head-wrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.head-left {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: "Jua", sans-serif;
+}
+
+.head-left span {
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.head-left img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.head-right {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.insta_wrap {
+  margin-right: 15px;
+}
+
+.github_wrap {
+  margin-right: 15px;
+}
+
+.github_on {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.insta_on {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.text-wrap {
+  width: 80%;
+  text-align: left;
+  margin: auto;
+  font-family: "Jua", sans-serif;
+}
+
+.text1 {
+  position: relative;
+  font-size: 2rem;
+  animation: slide 1.4s ease-in-out;
+}
+
+.text2 {
+  position: relative;
+  font-size: 2rem;
+  animation: slide 1.7s ease-in-out;
+}
+
+.text3 {
+  position: relative;
+  font-size: 2rem;
+  animation: slide 2s ease-in-out;
+}
+
+.text4 {
+  position: relative;
+  font-size: 2rem;
+  animation: slide 2.3s ease-in-out;
+}
+
+@keyframes slide {
+  from {
+    left: -1000px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.bg-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.bg {
+  background-image: url("../public/imgs/bg.jpg");
+  background-size: cover;
+  width: 80%;
+  height: 848px;
+  -webkit-animation: fadein 3s;
+}
+
+@media screen and (max-width:575px) {
+  .bg {display : none;}
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.introduce {
+  margin: auto;
+  text-align: center;
+  font-family: "Jua", sans-serif;
+  width: 80%;
+  margin-top: 50px;
+  border-bottom: 2px solid #c5c2c2;
+  padding-bottom: 30px;
+}
+
+.introduce span {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.introduce p {
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.skill-wrap {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+  font-family: "Jua", sans-serif;
+}
+
+.skill-wrap span {
+  font-size: 30px;
+}
+
+.skill-img-wrap {
+  text-align: center;
+  font-family: "Jua", sans-serif;
+}
+
+.skill-img-wrap {
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  border-bottom: 2px solid #c5c2c2;
+  width: 80%;
+}
+
+.skill-title {
+  font-size: 30px;
+}
+
+.skill-content {
+  font-size: 20px;
+}
+
+.skill-img-wrap .container {
+  margin-bottom: 30px;
+}
+
+.portfolio-wrap {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.portfolio-wrap span {
+  font-family: "Jua", sans-serif;
+  font-size: 30px;
+}
+
+.portfolio-card {
+  
+  text-align: center;
+  margin-top: 50px;
+  border-bottom: 2px solid  #c5c2c2;
+  margin-bottom: 50px;
+  width: 80%;
+  margin: auto;
+}
+
+.portfolio-card img {
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.portfolio-card p {
+  font-size: 20px;
+  font-family: "Jua", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.portfolio-card .card1 {
+  width: 100%;
+  height: 208px;
+  border: 2px solid #ececec;
+}
+
+.portfolio-card .card1:hover {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  transition: 0.7s;
+}
+
+.portfolio-card .card2 {
+  width: 100%;
+  height: 208px;
+  border: 2px solid #ececec;
+}
+
+.portfolio-card .card2:hover {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  transition: 0.7s;
+}
+
+.portfolio-card .card3 {
+  width: 100%;
+  height: 208px;
+  border: 2px solid #ececec;
+}
+
+.portfolio-card .card3:hover {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  transition: 0.7s;
+}
+
+.tmi-wrap {
+  text-align: center;
+  font-family: "Jua", sans-serif;
+  padding: 50px 0 50px 0;
+  border-bottom: 2px solid #c5c2c2;
+  width: 80%;
+  margin: auto;
+}
+
+.tmi-wrap span {
+  font-size: 30px;
+}
+
+.tmi-wrap span:hover {
+  cursor: pointer;
+}
+
+.tmi-wrap p {
+  font-size: 20px;
+  position: relative;
+  animation: bounce .3s ease infinite alternate;
+  margin-top: 10px;
+  color: #c5c2c2;
+}
+
+@keyframes bounce {
+  100% {
+    top: -5px;
+  }
+}
+
+.tmi-content {
+  text-align: left;
+  font-family: "Jua", sans-serif;
+  font-size: 20px;
+  width: 80%;
+  margin: auto;
+  border-bottom: 2px solid #c5c2c2;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  line-height: 2;
+}
+
+.tmi-content button {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #000;
+  background-color: #fff;
+  transition: 0.5s;
+  margin-left: 30px;
+}
+
+.tmi-content button:hover {
+  background-color: #c5c2c2;
+}
+
+
+.tmi-content p:last-child {
+  margin-bottom: 50px;
+}
+
+.footer-wrap {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Jua", sans-serif;
+}
+
+.footer-img-wrap {
+  margin-right: 100px;
+}
+
+@media screen and (max-width:575px) {
+  .footer-img-wrap {display : none;}
+}
+
+.footer-img-wrap img {
+  width: 100%;
+}
+
+.footer-content button {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #000;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.footer-content button:hover {
+  background-color: #c5c2c2;
+}
+
+.contact-wrap {
+  font-family: "Jua", sans-serif;
+}
+
+.contact-header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-header p {
+  line-height: 2;
+  color: #6e6e6e;
+  font-size: 17px;
+}
+
+.contact-form-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-wrap form {
+  padding: 50px;
+}
+
+.contact-form-wrap input {
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.contact-form-wrap .message {
+  width: 300px;
+  height: 100px;
+}
+
+.submit-button {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  background-color: rgb(146, 223, 30);
+  border-radius: 25px;
+}
+
+.card-wrap {
+  font-family: "Jua", sans-serif;
+  margin-top: 20px;
+}
+
+.card-wrap h1 {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.card-info-wrap {
+  display: flex;
+  justify-content: left;
+  width: 80%;
+  margin: auto;
+}
+
+.card-content span {
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.card-content p {
+  line-height: 2;
+}
+
+.card-bg img {
+  width: 50%;
+  margin-left: 500px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width:575px) {
+  .card-info-wrap {
+    display: block;
+  }
+  .card-bg img {
+    width: 100%;
+    margin: auto;
+  }
+}
