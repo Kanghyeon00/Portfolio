@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
+  const instaUrl = "https://www.instagram.com/kang_i00/";
+  const githubUrl = "https://github.com/Kanghyeon00?tab=repositories";
 
   return (
     <header className="head-wrap">
@@ -18,10 +20,10 @@ const Header = () => {
       </div>
       <div className="head-right">
         <div className="github_wrap">
-          <img className="github_on" src={process.env.PUBLIC_URL + "../imgs/github_on.png"} />
+          <img onClick={()=>{window.open(githubUrl)}} className="github_on" src={process.env.PUBLIC_URL + "../imgs/github_on.png"} />
         </div>
         <div className="insta_wrap">
-          <img className="insta_on" src={process.env.PUBLIC_URL + "../imgs/insta_on.png"} />
+          <img onClick={()=>{window.open(instaUrl)}} className="insta_on" src={process.env.PUBLIC_URL + "../imgs/insta_on.png"} />
         </div>
       </div>
     </header>

@@ -4,9 +4,13 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Card2 = () => {
+
+  const diaryUrl = "https://github.com/Kanghyeon00/Diary";
+  
   useEffect(() => {
     AOS.init({ duration: 1500 });
   });
+
   return (
     <>
       <div className="card-wrap">
@@ -27,9 +31,9 @@ const Card2 = () => {
               <span>사용된 기술 :</span>
               <p>HTML,CSS,JAVASCRIPT,REACT</p>
             </div>
-            <div className="github-link">
+            <div>
               <span>깃허브 링크 :</span>
-              <p>00</p>
+              <p className="github-link" onClick={()=>{window.open(diaryUrl)}}>링크</p>
             </div>
             <div className="contribution">
               <span>기여도 :</span>
@@ -55,7 +59,7 @@ const Card2 = () => {
             </div>
           </div>
           <div className="card-bg">
-            <img
+            <img onClick={()=>{window.open(diaryUrl)}}
               data-aos="flip-left"
               src={process.env.PUBLIC_URL + "../imgs/card2.png"}
               alt="card2"

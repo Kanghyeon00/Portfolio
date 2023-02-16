@@ -422,10 +422,22 @@ body {
   line-height: 2;
 }
 
+.card-content .github-link:hover {
+  cursor: pointer;
+  color: rgb(88, 204, 250);
+}
+
 .card-bg img {
   width: 50%;
   margin-left: 500px;
   margin-top: 30px;
+}
+
+.card-bg img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  transition: 0.3s;
 }
 
 @media screen and (max-width:575px) {
