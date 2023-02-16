@@ -5,8 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { useNavigate } from "react-router-dom";
 
-const Footer= () => {
-
+const Footer = () => {
   const navigate = useNavigate();
 
   return (
@@ -14,7 +13,10 @@ const Footer= () => {
       <Container className="footer-wrap">
         <Row>
           <Col className="footer-img-wrap">
-            <img src={process.env.PUBLIC_URL+"./imgs/contact_img.png"} alt="img" />
+            <img
+              src={process.env.PUBLIC_URL + "./imgs/contact_img.png"}
+              alt="img"
+            />
           </Col>
           <Col className="footer-content">
             <p>
@@ -29,7 +31,13 @@ const Footer= () => {
               <br />
               연락 부탁드립니다!
             </p>
-            <button onClick={()=>{navigate('/contact')}}>Contact To Me!</button>
+            <button
+              onClick={() => {
+                navigate("/contact");
+              }}
+            >
+              Contact To Me!
+            </button>
           </Col>
           <Col className="footer-info">
             <p>

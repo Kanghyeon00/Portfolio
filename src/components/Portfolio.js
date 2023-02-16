@@ -7,7 +7,6 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Portfolio = () => {
-    
   useEffect(() => {
     AOS.init({ duration: 1500 });
   });
@@ -27,7 +26,9 @@ const Portfolio = () => {
                 className="card1"
                 src={process.env.PUBLIC_URL + "./imgs/card1.png"}
                 alt="portfolio1"
-                onClick={()=>{navigate('/portfolio/1')}}
+                onClick={() => {
+                  navigate("/portfolio/1");
+                }}
               />
               <p>캠핑용품 사이트</p>
             </Col>
@@ -36,7 +37,9 @@ const Portfolio = () => {
                 className="card2"
                 src={process.env.PUBLIC_URL + "./imgs/card2.png"}
                 alt="portfolio2"
-                onClick={()=>{navigate('/portfolio/2')}}
+                onClick={() => {
+                  navigate("/portfolio/2");
+                }}
               />
               <p>감정 일기장</p>
             </Col>
@@ -45,7 +48,9 @@ const Portfolio = () => {
                 className="card3"
                 src={process.env.PUBLIC_URL + "./imgs/logo.png"}
                 alt="portfolio3"
-                onClick={()=>{navigate('/portfolio/3')}}
+                onClick={() => {
+                  navigate("/portfolio/3");
+                }}
               />
               <p>포트폴리오 사이트</p>
             </Col>

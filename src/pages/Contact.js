@@ -27,36 +27,36 @@ const Contact = () => {
 
   return (
     <>
-    <div className="contact-wrap">
-      <Header />
-      <div className="contact-header">
-        <h1>Contact To Me!</h1>
-        <p>
-          저에 대한 관심이 생기셨다면
-          <br />
-          폼을 작성하셔서 컨택해주신다면 정말 감사드리겠습니다!
-        </p>
-      </div>
-      <div className="contact-form-wrap">
-        <form ref={form} onSubmit={sendEmail}>
-          <p>회사명 :</p>
-          <input type="text" name="company" required  />
+      <div className="contact-wrap">
+        <Header />
+        <div className="contact-header">
+          <h1>Contact To Me!</h1>
+          <p>
+            저에 대한 관심이 생기셨다면
+            <br />
+            폼을 작성하셔서 컨택해주신다면 정말 감사드리겠습니다!
+          </p>
+        </div>
+        <div className="contact-form-wrap">
+          <form ref={form} onSubmit={sendEmail}>
+            <p>회사명 :</p>
+            <input type="text" name="company" required />
 
-          <p>성함 :</p>
-          <input type="text" name="name" required  />
+            <p>성함 :</p>
+            <input type="text" name="name" required />
 
-          <p>연락처 :</p>
-          <input type="tel" name="phone" required  />
+            <p>연락처 :</p>
+            <input type="tel" name="phone" required />
 
-          <p>E-mail :</p>
-          <input type="email" name="email" />
+            <p>E-mail :</p>
+            <input type="email" name="email" />
 
-          <p>메세지 :</p>
-          <textarea className="message" type="text" name="message" required />
-            <br/>
-          <input className="submit-button" type="submit" value="Send" />
-        </form>
-      </div>
+            <p>메세지 :</p>
+            <textarea className="message" type="text" name="message" required />
+            <br />
+            <input className="submit-button" type="submit" value="Send" />
+          </form>
+        </div>
       </div>
     </>
   );

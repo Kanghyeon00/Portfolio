@@ -4,7 +4,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Card1 = () => {
-
   const campUrl = "https://github.com/Kanghyeon00/Campingshop";
 
   useEffect(() => {
@@ -33,7 +32,14 @@ const Card1 = () => {
             </div>
             <div>
               <span>깃허브 링크 :</span>
-              <p className="github-link" onClick={()=>{window.open(campUrl)}}>링크</p>
+              <p
+                className="github-link"
+                onClick={() => {
+                  window.open(campUrl);
+                }}
+              >
+                링크
+              </p>
             </div>
             <div className="contribution">
               <span>기여도 :</span>
@@ -51,7 +57,10 @@ const Card1 = () => {
             </div>
           </div>
           <div className="card-bg">
-            <img onClick={()=>{window.open(campUrl)}}
+            <img
+              onClick={() => {
+                window.open(campUrl);
+              }}
               data-aos="flip-left"
               src={process.env.PUBLIC_URL + "../imgs/card1.png"}
               alt="card1"

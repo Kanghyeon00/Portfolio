@@ -120,8 +120,10 @@ body {
   -webkit-animation: fadein 3s;
 }
 
-@media screen and (max-width:575px) {
-  .bg {display : none;}
+@media screen and (max-width: 575px) {
+  .bg {
+    display: none;
+  }
 }
 
 @keyframes fadein {
@@ -205,10 +207,9 @@ body {
 }
 
 .portfolio-card {
-  
   text-align: center;
   margin-top: 50px;
-  border-bottom: 2px solid  #c5c2c2;
+  border-bottom: 2px solid #c5c2c2;
   margin-bottom: 50px;
   width: 80%;
   margin: auto;
@@ -234,7 +235,7 @@ body {
 
 .portfolio-card .card1:hover {
   -webkit-transform: scale(1.1);
-	transform: scale(1.1);
+  transform: scale(1.1);
   transition: 0.7s;
 }
 
@@ -246,7 +247,7 @@ body {
 
 .portfolio-card .card2:hover {
   -webkit-transform: scale(1.1);
-	transform: scale(1.1);
+  transform: scale(1.1);
   transition: 0.7s;
 }
 
@@ -258,7 +259,7 @@ body {
 
 .portfolio-card .card3:hover {
   -webkit-transform: scale(1.1);
-	transform: scale(1.1);
+  transform: scale(1.1);
   transition: 0.7s;
 }
 
@@ -282,7 +283,7 @@ body {
 .tmi-wrap p {
   font-size: 20px;
   position: relative;
-  animation: bounce .3s ease infinite alternate;
+  animation: bounce 0.3s ease infinite alternate;
   margin-top: 10px;
   color: #c5c2c2;
 }
@@ -318,7 +319,6 @@ body {
   background-color: #c5c2c2;
 }
 
-
 .tmi-content p:last-child {
   margin-bottom: 50px;
 }
@@ -333,8 +333,10 @@ body {
   margin-right: 100px;
 }
 
-@media screen and (max-width:575px) {
-  .footer-img-wrap {display : none;}
+@media screen and (max-width: 575px) {
+  .footer-img-wrap {
+    display: none;
+  }
 }
 
 .footer-img-wrap img {
@@ -436,11 +438,11 @@ body {
 .card-bg img:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1);
-	transform: scale(1.1);
+  transform: scale(1.1);
   transition: 0.3s;
 }
 
-@media screen and (max-width:575px) {
+@media screen and (max-width: 575px) {
   .card-info-wrap {
     display: block;
   }

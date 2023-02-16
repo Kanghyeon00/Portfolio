@@ -14,11 +14,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Skills = () => {
-  
-    useEffect(() => {
-      AOS.init({ duration: 1500 });
-    });
-  
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  });
 
   return (
     <>

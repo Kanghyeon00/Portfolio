@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./pages/Home";
-import Contact from './pages/Contact';
+import Contact from "./pages/Contact";
 import Card1 from "./pages/Card1";
 import Card2 from "./pages/Card2";
 import Card3 from "./pages/Card3";

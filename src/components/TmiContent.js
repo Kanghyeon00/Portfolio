@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const TmiContent = () => {
-  
   useEffect(() => {
     AOS.init({ duration: 1500 });
   });
@@ -38,7 +37,16 @@ const TmiContent = () => {
           10. 학원 종강후 공부가 조금 더 필요해보여 인터넷 강의 등으로 혼자
           독학을 이어나갔다
         </p>
-        <p>11. 저에 대해 더 알고싶으시다면 연락주세요! <button onClick={()=>{navigate('/contact')}}>Contact To Me!</button></p>
+        <p>
+          11. 저에 대해 더 알고싶으시다면 연락주세요!{" "}
+          <button
+            onClick={() => {
+              navigate("/contact");
+            }}
+          >
+            Contact To Me!
+          </button>
+        </p>
       </div>
     </div>
   );

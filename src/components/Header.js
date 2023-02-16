@@ -14,16 +14,32 @@ const Header = () => {
             navigate("/");
           }}
         />
-        <span onClick={() => {
+        <span
+          onClick={() => {
             navigate("/contact");
-          }}>Contact</span>
+          }}
+        >
+          Contact
+        </span>
       </div>
       <div className="head-right">
         <div className="github_wrap">
-          <img onClick={()=>{window.open(githubUrl)}} className="github_on" src={process.env.PUBLIC_URL + "../imgs/github_on.png"} />
+          <img
+            onClick={() => {
+              window.open(githubUrl);
+            }}
+            className="github_on"
+            src={process.env.PUBLIC_URL + "../imgs/github_on.png"}
+          />
         </div>
         <div className="insta_wrap">
-          <img onClick={()=>{window.open(instaUrl)}} className="insta_on" src={process.env.PUBLIC_URL + "../imgs/insta_on.png"} />
+          <img
+            onClick={() => {
+              window.open(instaUrl);
+            }}
+            className="insta_on"
+            src={process.env.PUBLIC_URL + "../imgs/insta_on.png"}
+          />
         </div>
       </div>
     </header>
